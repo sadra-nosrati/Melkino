@@ -1,0 +1,15 @@
+{
+  "name": "melkino-real-estate",
+  "version": "1.0.0",
+  "private": true,
+  "workspaces": [
+    "client",
+    "server"
+  ],
+  "scripts": {
+    "dev": "node scripts/dev.cjs",
+    "build": "npm run build --workspace melkino",
+    "lint": "npm run lint --workspace melkino",
+    "start": "npm run start --workspace server"
+  }
+}

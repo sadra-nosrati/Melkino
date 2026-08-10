@@ -1,0 +1,20 @@
+import FooterBrand from "./FooterBrand";
+import FooterNav from "./FooterNav";
+import FooterSocial from "./FooterSocial";
+
+function Footer() {
+  return (
+    <footer
+      id="next-section"
+      className="bg-dark-background border-t border-theme-strong/5 py-12 text-theme-strong"
+    >
+      <div className="mx-auto flex max-w-7xl flex-col tablet-landscape:flex-row items-center justify-between gap-8 tablet-landscape:gap-0 px-6">
+        <FooterBrand />
+        <FooterNav />
+        <FooterSocial />
+      </div>
+    </footer>
+  );
+}
+
+export default Footer;
