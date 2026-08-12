@@ -133,29 +133,6 @@ The generated frontend files are available in:
 
 ```text
 client/dist
-```
-
----
-
-## Project Structure
-
-```text
-Melkino/
-├── client/
-│   ├── public/
-│   │   └── screenshots/
-│   ├── src/
-│   └── ...
-│
-├── server/
-│   ├── db.json
-│   ├── server.js
-│   └── ...
-│
-├── package.json
-├── package-lock.json
-└── README.md
-```
 
 ---
 
