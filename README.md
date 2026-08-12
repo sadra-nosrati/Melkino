@@ -2,7 +2,7 @@
 
 Melkino is a responsive real estate web application built with **React, Vite, Tailwind CSS v4, Node.js, and Express**.
 
-The project combines a modern Persian/RTL interface with a lightweight REST API, user authentication flows, property listings, favorites, and dashboard functionality. It is structured as a full-stack application with separate frontend and backend workspaces.
+The project combines a modern Persian/RTL interface with a lightweight REST API, user authentication, property listings, favorites, and dashboard functionality. It is structured as a full-stack application with separate frontend and backend workspaces.
 
 ---
 
@@ -10,7 +10,7 @@ The project combines a modern Persian/RTL interface with a lightweight REST API,
 
 Melkino provides a responsive property browsing experience across desktop, tablet, and mobile devices.
 
-The application includes property discovery and detail pages, account-related features, saved properties, theme management, and frontend–backend communication through an Express REST API.
+The application includes property listings and detail pages, account-related features, saved properties, theme management, and frontend–backend communication through an Express REST API.
 
 The interface is designed primarily for Persian users with full RTL support while keeping the codebase modular and maintainable.
 
@@ -50,6 +50,32 @@ The interface is designed primarily for Persian users with full RTL support whil
 * Express
 * REST API
 * JSON-based local data storage
+
+---
+
+## Preview
+
+### Home Page
+
+![Melkino Home Page](client/public/screenshots/home-1.webp)
+
+![Melkino Home Page](client/public/screenshots/home-2.webp)
+
+### Property Pages
+
+![Melkino Property Page](client/public/screenshots/product-1.webp)
+
+![Melkino Property Page](client/public/screenshots/product-2.webp)
+
+### Login
+
+![Melkino Login Page](client/public/screenshots/login.webp)
+
+### User Dashboard
+
+![Melkino User Dashboard](client/public/screenshots/dashboard-1.webp)
+
+![Melkino User Dashboard](client/public/screenshots/dashboard-2.webp)
 
 ---
 
@@ -115,12 +141,13 @@ client/dist
 
 ```text
 Melkino/
-├── client/              # React + Vite frontend
+├── client/
 │   ├── public/
+│   │   └── screenshots/
 │   ├── src/
 │   └── ...
 │
-├── server/              # Node.js + Express backend
+├── server/
 │   ├── db.json
 │   ├── server.js
 │   └── ...
