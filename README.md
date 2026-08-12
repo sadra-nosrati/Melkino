@@ -1,49 +1,70 @@
-# Melkino — Real Estate Web Application
+# Melkino
 
-Melkino is a modern, responsive real estate web application built with **React, Vite, Tailwind CSS v4, Node.js, and Express**.
+Melkino is a responsive real estate web application built with **React, Vite, Tailwind CSS v4, Node.js, and Express**.
 
-The project is designed as a full-stack portfolio application with a strong focus on clean UI, responsive layouts, Persian/RTL support, reusable components, and practical frontend–backend integration.
+The project combines a modern Persian/RTL interface with a lightweight REST API, user authentication flows, property listings, favorites, and dashboard functionality. It is structured as a full-stack application with separate frontend and backend workspaces.
+
+---
+
+## Overview
+
+Melkino provides a responsive property browsing experience across desktop, tablet, and mobile devices.
+
+The application includes property discovery and detail pages, account-related features, saved properties, theme management, and frontend–backend communication through an Express REST API.
+
+The interface is designed primarily for Persian users with full RTL support while keeping the codebase modular and maintainable.
+
+---
 
 ## Features
 
-- Fully responsive design for desktop, tablet, and mobile
-- Persian and RTL user interface
-- Dark and Light theme support
-- Saved theme preference
-- Property listings
-- Property details pages
-- User registration and login
-- Favorites management
-- User dashboard
-- Client-side routing with React Router
-- REST API powered by Express
-- Local JSON-based demo data
-- Modern styling with Tailwind CSS v4
+* Responsive design for desktop, tablet, and mobile
+* Persian and RTL interface
+* Dark and Light themes
+* Persistent theme preference
+* Property listings
+* Property detail pages
+* User registration and login
+* Favorites management
+* User dashboard
+* Client-side routing with React Router
+* REST API with Express
+* Local JSON-based data storage
+* Tailwind CSS v4 styling
+
+---
 
 ## Tech Stack
 
 ### Frontend
 
-- React
-- Vite
-- Tailwind CSS v4
-- React Router
-- JavaScript
+* React
+* Vite
+* Tailwind CSS v4
+* React Router
+* JavaScript
 
 ### Backend
 
-- Node.js
-- Express
-- REST API
-- JSON-based local data storage
+* Node.js
+* Express
+* REST API
+* JSON-based local data storage
+
+---
 
 ## Getting Started
 
 Clone the repository:
 
 ```bash
-git clone https://github.com/sadra-nosrati/melkino-real-estate.git
-cd melkino-real-estate
+git clone https://github.com/sadra-nosrati/Melkino.git
+```
+
+Navigate to the project directory:
+
+```bash
+cd Melkino
 ```
 
 Install the dependencies:
@@ -58,7 +79,7 @@ Start the development environment:
 npm run dev
 ```
 
-The development command starts both the **Vite frontend** and **Express backend** together, so you do not need to run them manually in separate terminals.
+The development command starts both the **Vite frontend** and **Express backend**, so there is no need to run them manually in separate terminals.
 
 During development, frontend requests to:
 
@@ -72,24 +93,28 @@ are proxied by Vite to the Express API server running on:
 http://localhost:5000
 ```
 
+---
+
 ## Production Build
 
-Create an optimized production build with:
+Create an optimized production build:
 
 ```bash
 npm run build
 ```
 
-The generated frontend files will be available in:
+The generated frontend files are available in:
 
 ```text
 client/dist
 ```
 
+---
+
 ## Project Structure
 
 ```text
-melkino-real-estate/
+Melkino/
 ├── client/              # React + Vite frontend
 │   ├── public/
 │   ├── src/
@@ -105,6 +130,8 @@ melkino-real-estate/
 └── README.md
 ```
 
+---
+
 ## Demo Data
 
 The project uses:
@@ -113,11 +140,13 @@ The project uses:
 server/db.json
 ```
 
-as a lightweight local data source for development and demonstration purposes.
+as a lightweight local data source for development and demonstration.
 
-It contains sample property data and can also store demo users during local development.
+It contains sample property information and can also store demo user data during local development.
 
 > Do not commit real user information, passwords, authentication tokens, API keys, or other sensitive data to a public repository.
+
+---
 
 ## Development Workflow
 
@@ -130,33 +159,38 @@ npm run dev --workspace melkino
 npm run dev --workspace server
 ```
 
-If the development process is stopped, both services are terminated together. If either service exits unexpectedly with an error, the other service is also stopped.
+Stopping the root development process terminates both services together. If either service exits unexpectedly, the other process is also stopped.
 
-This keeps the local development environment synchronized and avoids leaving unnecessary background processes running.
+This keeps the local development environment synchronized and prevents unnecessary processes from remaining active.
 
-## Purpose
+---
 
-Melkino was created to demonstrate practical frontend and full-stack development concepts, including:
+## Key Implementation Areas
 
-- Component-based React architecture
-- Responsive UI development
-- RTL interface implementation
-- Theme management
-- Client-side routing
-- Authentication flows
-- Dynamic data rendering
-- REST API integration
-- Frontend and backend workspace management
-- Maintainable project organization
+Melkino demonstrates practical implementation of:
+
+* Component-based React architecture
+* Responsive interface development
+* RTL layout implementation
+* Theme management
+* Client-side routing
+* Authentication flows
+* Dynamic property data
+* Favorites and user-specific interactions
+* REST API integration
+* Frontend and backend workspace management
+* Maintainable project organization
+
+---
 
 ## Author
 
 **Sadra Nosrati**
 
-Frontend Developer focused on building modern, responsive, and user-friendly web applications.
+Frontend Developer focused on building responsive, maintainable, and user-friendly web applications.
 
-GitHub: https://github.com/sadra-nosrati
+GitHub: `github.com/sadra-nosrati`
 
 ---
 
-If you find this project useful or interesting, consider giving the repository a star.
+If you find the project useful, consider starring the repository.
